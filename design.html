@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8" />
+    <title>TALP</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/jquery.range.css" />
+    <link rel="stylesheet" href="css/bootstrap-multiselect.css" />
+    <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+      integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.range.js"></script>
+    <script src="js/bootstrap-multiselect.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg header">
+      <a href="index.html" class="navbar-brand logo"
+        ><img src="images/logo-dark.png" 
+      /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Overview</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="design.html">Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="measure.html">Measure</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+        </ul>
+        <div class="header-right">
+          <a href="#" class="avatar">
+            <span><img src="images/avatar.jpg" alt="avatar"></span>
+          </a>
+        </div>
+      </div>
+  </nav>
+
+    <section class="container-fluid  overlaphead">
+       
+        <div class="row" style='display:none;'>
+          <div class="col-md-4 p-0">
+            <header class="text-center active">
+              <h1 class="display-4 m-0">Design</h1>
+            </header>
+          </div>
+          <div class="col-md-4 p-0">
+            <header class="text-center">
+              <h1 class="display-4 m-0">Measure</h1>
+            </header>
+          </div>
+          <div class="col-md-4 p-0">
+            <header class="text-center">
+              <h1 class="display-4 m-0">Learn</h1>
+            </header>
+          </div>
+        </div>
+
+        <div class="row tab-section">
+          <div class="col-md-3  left-nav-bar">
+		    <div class='nav-title'>
+					<div>Design</div>
+					<div class="desc">Design Your New Experiment</div>
+				</div>
+            <!-- Tabs nav -->
+            <div
+              class="nav flex-column nav-pills nav-pills-custom"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <a
+                class="nav-link mb-3 p-3 shadow active"
+                id="v-pills-first-tab"
+                data-toggle="pill"
+                href="#v-pills-first"
+                role="tab"
+                aria-controls="v-pills-first"
+                aria-selected="true"
+              >
+                <i class="fa fa-list-ul mr-2"></i>
+                <span class="small text-uppercase"
+                  >Tell us more about the test</span
+                ></a
+              >
+
+              <a
+                class="nav-link mb-3 p-3 shadow"
+                id="v-pills-second-tab"
+                data-toggle="pill"
+                href="#v-pills-second"
+                role="tab"
+                aria-controls="v-pills-second"
+                aria-selected="false"
+              >
+                <i class="fa fa-check-square-o mr-2"></i>
+                <span class="small text-uppercase">
+                  Estimating sample size
+                </span></a
+              >
+
+              <a
+                class="nav-link mb-3 p-3 shadow"
+                id="v-pills-third-tab"
+                data-toggle="pill"
+                href="#v-pills-third"
+                role="tab"
+                aria-controls="v-pills-third"
+                aria-selected="false"
+              >
+                <i class="fa fa-search mr-2"></i>
+                <span class="small text-uppercase">
+                  Identify customers to test
+                </span></a
+              >
+
+              <a
+                class="nav-link mb-3 p-3 shadow"
+                id="v-pills-fourth-tab"
+                data-toggle="pill"
+                href="#v-pills-fourth"
+                role="tab"
+                aria-controls="v-pills-fourth"
+                aria-selected="false"
+              >
+                <i class="fa fa-bookmark-o mr-2"></i>
+                <span class="small text-uppercase"
+                  >Identify Control Customers
+                </span></a
+              >
+            </div>
+          </div>
+
+           <div class="col-md-12 tab-content-area pl-0">
+			  
+               
+            <form>
+              <!-- Tabs content -->
+              <div class="tab-content" id="v-pills-tabContent" style='margin-top: 57px;'>
+			  
+                <div
+                  class="tab-pane fade shadow show active"
+                  id="v-pills-first"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-first-tab"
+                >
+
+			           	<div class="tab-title-bar">
+			    <i class="fa fa-list-ul mr-2 icon-container"></i>
+				<div class='tab-title'>Tell us more about your test</div>
+				<div class='tab-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+				<div class="progress-bar">
+					<div class="progress-step"></div>
+				</div>
+			            </div>
+                  <div class="form-group">
+                    <label
+                      >Select Test Level
+                      <span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Test and learn gives you the option to conduct test
+                          on site level or customer level.
+                        </span>
+                      </span></label
+                    >
+                    <select class="form-control">
+                      <option value="customer">Customer</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label
+                      >Enter Test Name
+                      <span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Enter a name for your test that you would later like
+                          to refer to.</span
+                        >
+                      </span>
+                    </label>
+                    <input
+                      type="text"
+                      value="Device Upgrades"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label
+                      >Setup your business goal
+                      <span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Enter/Select what business goal you want to set up
+                          for the current test. Ex- Increment in driver earning.
+                        </span>
+                      </span>
+                    </label>
+                    <select class="form-control">
+                      <option value="Upgrade"
+                        >Upgrade</option
+                      >
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label
+                      >Channel
+                      <span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Enter/Select the type of test for categorising your
+                          test. Ex-Driver Engagement
+                        </span>
+                      </span></label
+                    >
+                    <select class="form-control">
+                      <option value="Email">Email</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label
+                      >Select Primary Metric that you want to measure
+                      <span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Test & Learn recommends choosing the metric that
+                          relates most directly to the primary measure of
+                          success for your campaign. Ex- Driver retention.
+                        </span>
+                      </span></label
+                    >
+                    <select class="form-control">
+                      <option value="">ARPU</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label
+                      >How do you want to proceed?
+                      <span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Test and learn gives you an option to select how you
+                          want tot proceed further. You can directly proceed to
+                          control store selection if you already have your test
+                          store list.
+                        </span>
+                      </span>
+                    </label>
+                    <br />
+
+                    <p>
+                      <input
+                        type="radio"
+                        id="testandcontrol"
+                        name="proceed"
+                        value="1"
+                        checked
+                      />
+                      <label for="testandcontrol"
+                        >Select Test and Control Zones</label
+                      >
+
+
+                      <input
+                      type="radio"
+                      id="selectcontrolzones"
+                      name="proceed"
+                      value="2"
+                    />
+                    <label for="selectcontrolzones"
+                      >Select Control Zones</label
+                    >
+                    </p>
+                    <div class="row" style="display: none;"  id="enable-val2">
+                      <div class="col-md-4">
+                        <select class="boot-multiselect" multiple="multiple">
+                          <option value="1">Abingdon #154</option>
+                  <option value="2">Airport #964 #2201</option>
+                  <option value="3">Alliance #2541</option>
+                  <option value="4">Amarillo #755 #822 #3383</option>
+                  <option value="5">American Fork #2511</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-outline-theme dropdown-toggle w-100 text-left"
+                            type="button"
+                            id="dropdownMenuButton"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                          Paste list of customers
+                            <b class="fa fa-angle-down"></b>
+                          </button>
+                          <div class="dropdown-menu dark-bg w-100">
+                            <form>
+                              <div class="form-group px-3 mb-2">
+                                <label for="">Name</label>
+                                <input type="text" class="form-control" id="" />
+                              </div>
+                              <div class="form-group px-3 mb-2">
+                                <textarea
+                                  rows="4"
+                                  type="text"
+                                  class="form-control"
+                                >
+                                </textarea>
+                              </div>
+                              <div class="btn-group px-3 mb-2">
+                                <button type="submit" value="Save">Save</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <p>
+                      <input
+                        type="radio"
+                        id="pastecontrol"
+                        name="proceed"
+                        value="Paste list of test zones"
+                      />
+                      <label for="pastecontrol">
+                        Paste list of test zones
+                      </label>
+
+                      <input
+                        type="radio"
+                        id="selectcontrol"
+                        name="proceed"
+                        value="Select zones from List"
+                      />
+                      <label for="selectcontrol">Select zones from List</label>
+                    </p> -->
+                  </div>
+                  <div class="btn-group">
+                    <button type="submit" value="Next">Next</button>
+                    <button type="button" value="Save as Draft">
+                      Save as Draft
+                    </button>
+                  </div>
+
+                </div>
+
+                <div
+                  class="tab-pane fade shadow "
+                  id="v-pills-second"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-second-tab"
+                >
+				 <div class="tab-title-bar">
+			    <i class="fa fa-check-square-o mr-2 icon-container"></i>
+				<div class="tab-title">
+                  Estimating sample size                </div>
+				<div class="tab-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+				<div class="progress-bar">
+					<div class="progress-step"></div>
+				</div>
+			  </div>
+                  <div class="form-group">
+                    <label
+                      >Enter Test Date & Duration<span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Enter a name for your test that you would later like
+                          to refer to.</span
+                        >
+                      </span>
+                    </label>
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div
+                          class="datepicker date input-group p-0 shadow-sm mb-0"
+                        >
+                          <input
+                            type="text"
+                            placeholder="Choose a date"
+                            class="form-control"
+                            id="reservationDate"
+                          />
+                          <div class="input-group-append">
+                            <span class="input-group-text px-4"
+                              ><i class="fa fa-calendar"></i
+                            ></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="number" value="14" class="form-control" />
+                      </div>
+                      <div class="col-md-2">
+                        <select class="form-control">
+                          <option value="days">Days</option>
+                          <option value="month">Weeks</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label
+                      >Do you want us to recommend the sample size needed for the test?
+                      <span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Test & Learn recommends choosing the metric that
+                          relates most directly to the primary measure of
+                          success for your campaign. Ex- Driver retention.
+                        </span>
+                      </span></label
+                    >
+                    <p>
+                      <input
+                        type="radio"
+                        id="yes"
+                        name="recommendnumber"
+                        checked
+                        value="1"
+                      />
+                      <label for="yes">Yes</label>
+
+                      <input
+                        type="radio"
+                        id="no"
+                        name="recommendnumber"
+                        value="2"
+                      />
+                      <label for="no">No</label>
+                    </p>
+                  </div>
+                  <div
+                    class="recommendnumber"
+                    id="hide-1"
+                    style="display: block;"
+                  >
+                 
+
+                    <div class="form-group">
+                      <label
+                        >Set expected percentage incremental value of primary metric 
+                        <span class="tooltip"
+                          >?
+                          <span class="tooltiptext"
+                            >Test & Learn recommends choosing the metric that
+                            relates most directly to the primary measure of
+                            success for your campaign. Ex- Driver retention.
+                          </span>
+                        </span></label
+                      >
+
+                      <input class="single-slider" type="hidden" value="0" />
+                    </div>
+
+                    <div class="form-group">
+                      <label
+                        >Set Confidence Level and Power Level
+                        <span class="tooltip"
+                          >?
+                          <span class="tooltiptext"
+                            >Enter a name for your test that you would later
+                            like to refer to.</span
+                          >
+                        </span>
+                      </label>
+                      <div class="row">
+                        <div class="col-md-2 text-center">
+                          <input
+                            type="text"
+                            value="95"
+                            class="form-control mb-0"
+                          />
+                          <span
+                            >Set Confidence Level
+                            <pre>(recommended – 95%)</pre>
+                          </span>
+                        </div>
+                        <div class="col-md-2 text-center">
+                          <input
+                            type="text"
+                            value="0"
+                            class="form-control mb-0"
+                          />
+                          <span
+                            >Power Level
+                            <pre>(recommended – 80%)</pre>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <u id="enableexpectedearnings"
+                        >Click here to get sample size</u
+                      >
+                    </div>
+
+                    <div class="expectedearnings" style="display: none;">
+                      <!-- <span class="infodata"
+                        >Expected Incremental Earnings : <span>$36</span></span
+                      > -->
+
+                      <div class="form-group">
+                      <label
+                      >Sample Size needed for test
+                      <span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Enter a name for your test that you would later like
+                          to refer to.</span
+                        >
+                      </span>
+                    </label>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <input type="number" value="0" class="form-control" />
+                      </div>
+                    </div>
+                      </div>
+
+                      <div class="form-group">
+                        <ul class="sample-blocks p-0">
+                          <li>
+                            <h3>1100</h3>
+                            <p>Sample Size</p>
+                            <h5>94.90%</h5>
+                            <p>Significance</p>
+                          </li>
+                          <li>
+                            <h3>1250</h3>
+                            <p>Sample Size</p>
+                            <h5>94.95%</h5>
+                            <p>Significance</p>
+                          </li>
+                          <li class="active">
+                            <h3>1300</h3>
+                            <p>Sample Size</p>
+                            <h5>95%</h5>
+                            <p>Significance</p>
+                          </li>
+                          <li>
+                            <h3>1320</h3>
+                            <p>Sample Size</p>
+                            <h5>95.05%</h5>
+                            <p>Significance</p>
+                          </li>
+                          <li>
+                            <h3>1400</h3>
+                            <p>Sample Size</p>
+                            <h5>95.10%</h5>
+                            <p>Significance</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="recommendnumber"
+                    id="hide-2"
+                    style="display: none;"
+                  >
+                    <label
+                      >Sample Size needed for test
+                      <span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Enter a name for your test that you would later like
+                          to refer to.</span
+                        >
+                      </span>
+                    </label>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <input type="number" value="0" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-group w-100">
+                    <button type="submit" value="Next">Next</button>
+                    <button type="button" value="Save as Draft">
+                      Save as Draft
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade shadow"
+                  id="v-pills-third"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-third-tab"
+                >
+				<div class="tab-title-bar">
+			    <i class="fa fa-search mr-2 icon-container"></i>
+				<div class="tab-title">Identify customers to test</div>
+				<div class="tab-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+				<div class="progress-bar">
+					<div class="progress-step"></div>
+				</div>
+			  </div>
+                  <div class="form-group">
+                    <label>Are there any set of customers you can not test?
+                      <span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Test & Learn recommends choosing the metric that
+                          relates most directly to the primary measure of
+                          success for your campaign. Ex- Driver retention.
+                        </span>
+                      </span></label
+                    >
+                    <p>
+                      <input
+                        type="radio"
+                        id="noteststoresyes"
+                        name="noteststores"
+                        value="1"
+                      />
+                      <label for="noteststoresyes">Yes</label>
+
+                      <input
+                        type="radio"
+                        id="noteststoresno"
+                        name="noteststores"
+                        checked
+                        value="2"
+                      />
+                      <label for="noteststoresno">No</label>
+                    </p>
+                    <div class="row" style="display: none;"  id="hide-11">
+                      <div class="col-md-5">
+                        <select class="boot-multiselect" multiple="multiple">
+                          <option value="1">Abingdon #154</option>
+                          <option value="2">Airport #964 #2201</option>
+                          <option value="3">Alliance #2541</option>
+                          <option value="4">Amarillo #755 #822 #3383</option>
+                          <option value="5">American Fork #2511</option>
+                        </select>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-outline-theme dropdown-toggle w-100 text-left"
+                            type="button"
+                            id="dropdownMenuButton"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                          Paste list of customers
+                            <b class="fa fa-angle-down"></b>
+                          </button>
+                          <div class="dropdown-menu dark-bg w-100">
+                            <form>
+                              <div class="form-group px-3 mb-2">
+                                <label for="">Name</label>
+                                <input type="text" class="form-control" id="" />
+                              </div>
+                              <div class="form-group px-3 mb-2">
+                                <textarea
+                                  rows="4"
+                                  type="text"
+                                  class="form-control"
+                                >
+                                </textarea>
+                              </div>
+                              <div class="btn-group px-3 mb-2">
+                                <button type="submit" value="Save">Save</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label
+                      >Are there any set of customers you must test?
+                      <span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Test & Learn recommends choosing the metric that
+                          relates most directly to the primary measure of
+                          success for your campaign. Ex- Driver retention.
+                        </span>
+                      </span></label
+                    >
+                    <p>
+                      <input
+                        type="radio"
+                        id="teststoresyes"
+                        name="teststores"
+                        value="1"
+                      />
+                      <label for="teststoresyes">Yes</label>
+
+                      <input
+                        type="radio"
+                        id="teststoresno"
+                        name="teststores"
+                        checked
+                        value="2"
+                      />
+                      <label for="teststoresno">No</label>
+                    </p>
+                    <div class="row" style="display: none;"  id="disable-1">
+                      <div class="col-md-5">
+                        <select class="boot-multiselect" multiple="multiple">
+                          <option value="1">Abingdon #154</option>
+                          <option value="2">Airport #964 #2201</option>
+                          <option value="3">Alliance #2541</option>
+                          <option value="4">Amarillo #755 #822 #3383</option>
+                          <option value="5">American Fork #2511</option>
+                        </select>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="dropdown">
+                          <button
+                            class="btn btn-outline-theme dropdown-toggle w-100 text-left"
+                            type="button"
+                            id="dropdownMenuButton"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                          Paste list of customers
+                            <b class="fa fa-angle-down"></b>
+                          </button>
+                          <div class="dropdown-menu dark-bg w-100">
+                            <form>
+                              <div class="form-group px-3 mb-2">
+                                <label for="">Name</label>
+                                <input type="text" class="form-control" id="" />
+                              </div>
+                              <div class="form-group px-3 mb-2">
+                                <textarea
+                                  rows="4"
+                                  type="text"
+                                  class="form-control"
+                                >
+                                </textarea>
+                              </div>
+                              <div class="btn-group px-3 mb-2">
+                                <button type="submit" value="Save">Save</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label
+                      >Select metrics to distribute your customers 
+                      <span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Test & Learn recommends choosing the metric that
+                          relates most directly to the primary measure of
+                          success for your campaign. Ex- Driver retention.
+                        </span>
+                      </span></label
+                    >
+          
+                    <div class="row">
+                      <div class="col-md-4">
+                        <select class="boot-multiselect" multiple="multiple">
+                          <option value="1">Orders per driver</option>
+                          <option value="2">Driver Tenure</option>
+                          <option value="3">Spark order share</option>
+                          <option value="4">Call centre calls</option>
+                          <option value="5">Avg driver earning</option>
+                          <option value="6">Tips/Orders with tips</option>
+                          <option value="7">Earning per order</option>
+                          <option value="8">Bonus amount</option>
+                          <option value="9">Offer Acceptance</option>
+                          <option value="10">Percentage of orders accepted via RR</option>
+                          <option value="11">PSA</option>
+                          <option value="12">% of orders accepted via Broadcast with surge</option>
+                          <option value="13">Broadcast acceptance</option>
+                          <option value="14">% Orders expired</option>
+                          <option value="15">3rd party orders</option>
+                          <option value="16">dropped orders</option>
+                          <option value="17">Time to store</option>
+                          <option value="18">Store Wait time</option>
+                          <option value="19">Delivery time</option>
+                          <option value="20">Drop wait time</option>
+                          <option value="21">Order distance/Long distance orders</option>
+                          <option value="22">OTD</option>
+                          <option value="23">OTA</option>
+                          <option value="24">OTP</option>
+                          <option value="25">Batch rate</option>
+                          <option value="26">Multiple trips for an order</option>
+                          <option value="27">Returned Orders</option>
+                          <option value="28">Batch units</option>
+                          <option value="29">Avg Basket size</option>
+                          <option value="30">Large/Cold storage items</option>
+                          <option value="31">CSAT rating</option>
+                          <option value="32">Driver friendliness</option>
+                          <option value="33">Driver CSAT</option>
+                          <option value="34">CSAT delivery</option>       
+                        </select>
+                      </div>
+                    
+                    </div>
+                  </div>
+                  <div class="table-responsive">
+                  <table class="table table-striped table-theme">
+                    <thead>
+                      <tr>
+                        <th scope="col">Criteria</th>
+                        <th scope="col" class="text-center">Value</th>
+                        <th scope="col" class="text-center">Bucket</th>
+                        <th scope="col" class="text-center">Customers Left</th>
+                        <th scope="col" class="text-center">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Device Age</td>
+                        <td class="text-center"> 
+                          <input
+                          type="text"
+                          value="> 2 Years"
+                          class="form-control"
+                        />
+                      </td>
+                        <td class="text-center">
+                          <select class="form-control">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                          </select>
+                        </td>
+                        <td class="text-center">
+                          2,684,932
+                         </td>
+                         <td class="text-center"><i class="fa fa-pencil pr-3"></i> <i class="fa fa-remove"></i></td>
+                       </tr>
+                      <tr>
+                        <td>Time to Contract Expiry</td>
+                        <td class="text-center"> 
+                          <input
+                          type="text"
+                          value="< 60 Days"
+                          class="form-control"
+                        />
+                      </td>
+                        <td class="text-center">
+                          <select class="form-control">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                          </select>
+                        </td>
+                        <td class="text-center">
+                          143,768
+                         </td>
+                         <td class="text-center"><i class="fa fa-pencil pr-3"></i> <i class="fa fa-remove"></i></td>
+                       </tr>
+                      <tr>
+                        <td>Device Out Of Warranty</td>
+                        <td class="text-center"> 
+                          <input
+                          type="text"
+                          value="Yes"
+                          class="form-control"
+                        />
+                      </td>
+                        <td class="text-center">
+                          <select class="form-control">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                          </select>
+                        </td>
+                        <td class="text-center">
+                          12,005
+                         </td>
+                         <td class="text-center"><i class="fa fa-pencil pr-3"></i> <i class="fa fa-remove"></i></td>
+                      </tr>
+                      <tr>
+                        <td>Existing Plan</td>
+                        <td class="text-center"> 
+                          <input
+                          type="text"
+                          value="4G"
+                          class="form-control"
+                        />
+                      </td>
+                        <td class="text-center">
+                          <select class="form-control">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                          </select>
+                        </td>
+                        <td class="text-center">
+                          1,502
+                         </td>
+                         <td class="text-center"><i class="fa fa-pencil pr-3"></i> <i class="fa fa-remove"></i></td>
+                       </tr>
+                    </tbody>
+                  </table>
+                  </div>
+
+                  <div class="form-group">
+                    <label
+                      >How do you want to optimize your final list of customers?
+                      <span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Test & Learn recommends choosing the metric that
+                          relates most directly to the primary measure of
+                          success for your campaign. Ex- Driver retention.
+                        </span>
+                      </span></label
+                    >
+          
+                    <div class="row">
+                      <div class="col-md-4">
+                        <select class="boot-multiselect" multiple="multiple">
+                          <option value="1"
+                            >Zones With High  driver Population
+                            </option>
+                          <option value="2"
+                            >Zones With Medium Driver Population
+                          </option>
+                          <option value="3"
+                            >Zones With Low Driver Population
+                          </option>
+                          <option value="4"
+                            >Zones With Mixed Distribution Of Driver Population
+                          </option>
+                        </select>
+                      </div>
+                    
+                    </div>
+                  </div>
+
+                  
+                  <div class="form-group">
+                    <label
+                      >Do you want us to recommend number of customers?
+                      <span class="tooltip"
+                        >?
+                        <span class="tooltiptext"
+                          >Test & Learn recommends choosing the metric that
+                          relates most directly to the primary measure of
+                          success for your campaign. Ex- Driver retention.
+                        </span>
+                      </span></label
+                    >
+                    <p>
+                      <input
+                        type="radio"
+                        id="noofzoneyes"
+                        name="noofzone"
+                        checked
+                        value="1"
+                      />
+                      <label for="noofzoneyes">Yes</label>
+
+                      <input
+                        type="radio"
+                        id="noofzoneno"
+                        name="noofzone"
+                        value="2"
+                      />
+                      <label for="noofzoneno">No</label>
+                    </p>
+                    <div class="row" style="display: none;"  id="noofzone-2">
+                      <div class="col-md-2">
+                      <input type="number" class="form-control" value="0">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <u id="actualtestsites">Click here to get the list of customers</u>
+                  </div>
+
+                 
+
+                    <div class="samplecalc" style="display: none;">
+
+                        <ul id="myTab2" role="tablist" class="nav nav-tabs nav-tabs-theme nav-pills with-arrow lined flex-column flex-sm-row text-center">
+                          <li class="nav-item flex-sm-fill">
+                            <a id="firsttab-tab" data-toggle="tab" href="#firsttab" role="tab" aria-controls="firsttab" aria-selected="true" class="nav-link rounded-0 active">Customers to test</a>
+                          </li>
+                          <li class="nav-item flex-sm-fill">
+                            <a id="secondtab-tab" data-toggle="tab" href="#secondtab" role="tab" aria-controls="secondtab" aria-selected="false" class="nav-link rounded-0">Performance Across Selected Criteria/Metric</a>
+                          </li>
+                         
+                        </ul>
+                        <div id="myTab2Content" class="tab-content tab-content-theme">
+                          <div id="firsttab" role="tabpanel" aria-labelledby="first-tab" class="tab-pane fade px-0 py-3 show active bg-transparent">
+                            <div class="table-responsive">
+                              <table style="width:100%" class="table table-striped table-theme zonelist">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Customer ID</th>
+                                    <th scope="col" class="text-center">State</th>
+                                    <th scope="col" class="text-center">Tenure (Months)</th>
+                                    <th scope="col" class="text-center">Usage (Minutes)</th>
+                                    <th scope="col" class="text-center">LTV</th>
+                                    <th scope="col" class="text-center"># Device Upgrades</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>107XXXX76</td>
+                                    <td class="text-center">CA</td>
+                                    <td class="text-center">14</td> 
+                                    <td class="text-center">2,100</td> 
+                                    <td class="text-center">$630</td> 
+                                    <td class="text-center">1</td> 
+                                  </tr>
+                                  <tr>
+                                    <td>107XXXX22</td>
+                                    <td class="text-center">TX</td>
+                                    <td class="text-center">8</td> 
+                                    <td class="text-center">1,200</td> 
+                                    <td class="text-center">$360</td> 
+                                    <td class="text-center">0</td> 
+                                  </tr>
+                                  <tr>
+                                    <td>107XXXX49</td>
+                                    <td class="text-center">FL</td>
+                                    <td class="text-center">37</td> 
+                                    <td class="text-center">7,400</td> 
+                                    <td class="text-center">$1,850</td> 
+                                    <td class="text-center">3</td>  
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div id="secondtab" role="tabpanel" aria-labelledby="second-tab" class="tab-pane fade px-0 py-3 bg-transparent">
+                            <div class="table-responsive">
+                              <table style="width:100%" class="table table-striped table-theme zonelist">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Metrics/ Criteria </th>
+                                    <th scope="col" class="text-center">Device Age</th>
+                                    <th scope="col" class="text-center">Time to Contract Expiry</th>
+                                    <th scope="col" class="text-center">% Device Out Of Warranty</th>
+                                    <th scope="col" class="text-center">% Existing Plan-4G</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Selected Test Pool</td>
+                                    <td class="text-center">34</td> 
+                                    <td class="text-center">2</td> 
+                                    <td class="text-center">26%</td> 
+                                    <td class="text-center">88%</td> 
+                                  </tr>
+                                  <tr>
+                                    <td>Potential Test Pool</td>
+                                    <td class="text-center">18</td> 
+                                    <td class="text-center">7</td> 
+                                    <td class="text-center">78%</td> 
+                                    <td class="text-center">65%</td> 
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                     
+
+
+
+       
+                    </div>
+                 
+
+
+                  <div class="btn-group w-100">
+                    <button type="submit" value="Next">Next</button>
+                    <button type="button" value="Save as Draft">
+                      Save as Draft
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade shadow"
+                  id="v-pills-fourth"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-fourth-tab"
+                >
+                <div class="tab-title-bar">
+                  <i class="fa fa-bookmark-o mr-2 icon-container"></i>
+                <div class='tab-title'>Identify control customers</div>
+                <div class='tab-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                <div class="progress-bar">
+                  <div class="progress-step"></div>
+                </div>
+                          </div>
+
+                          <div class="form-group">
+                            <label
+                              >Adjust your pre-period and post period for Test Control Matching & Verification
+                              <span class="tooltip">?
+                                <span class="tooltiptext"
+                                  >Enter a name for your test that you would later like
+                                  to refer to.</span
+                                >
+                              </span>
+                            </label>
+                            <div class="row">
+                              <div class="col-md-2">
+                                <input type="text" placeholder="Enter Pre Period" class="form-control" />
+                              </div>
+                              <div class="col-md-2">
+                                <select class="form-control">
+                                  <option value="days">Days</option>
+                                  <option value="month">Weeks</option>
+                                </select>
+                              </div>
+                              <div class="col-md-4">
+                                <div
+                                  class="datepicker date input-group p-0 shadow-sm mb-0"
+                                >
+                                  <input
+                                    type="text"
+                                    placeholder="Enter Test Date"
+                                    class="form-control"
+                                    id="reservationDate"
+                                  />
+                                  <div class="input-group-append">
+                                    <span class="input-group-text px-4"
+                                      ><i class="fa fa-calendar"></i
+                                    ></span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <input type="text" placeholder="Enter Post Period" class="form-control" />
+                              </div>
+                              <div class="col-md-2">
+                                <select class="form-control">
+                                  <option value="days">Days</option>
+                                  <option value="month">Weeks</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label
+                              >Enter Test Duration
+                              <span class="tooltip">?
+                                <span class="tooltiptext"
+                                  >Enter a name for your test that you would later like
+                                  to refer to.</span
+                                >
+                              </span>
+                            </label>
+                            <div class="row">
+                              <div class="col-md-2">
+                                <input type="number" value="14" class="form-control" />
+                              </div>
+                              <div class="col-md-2">
+                                <select class="form-control">
+                                  <option value="days">Days</option>
+                                  <option value="month">Weeks</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label
+                              >Do you want to select your control customers from entire pool of customers?
+                              <span class="tooltip"
+                                >?
+                                <span class="tooltiptext"
+                                  >Test and learn gives you an option to select how
+                                  you want tot proceed further. You can directly
+                                  proceed to control store selection if you already
+                                  have your test store list.
+                                </span>
+                              </span>
+                            </label>
+                            <br />
+      
+                            <p>
+                              <input
+                                type="radio"
+                                id="option1"
+                                name="stores"
+                                checked
+                                value="Select Test and Control Stores"
+                              />
+                              <label for="option1">Yes, Include all customers</label>
+      
+                              <input
+                                type="radio"
+                                id="option2"
+                                name="stores"
+                                value="Choose from custom list"
+                              />
+                              <label for="option2">Choose from custom list </label>
+      
+                              <input
+                                type="radio"
+                                id="option3"
+                                name="stores"
+                                value="Select Control Stores"
+                              />
+                              <label for="option3">Upload CSV </label>
+
+                              <input
+                                type="radio"
+                                id="option3"
+                                name="stores"
+                                value="Select Control Stores"
+                              />
+                              <label for="option3">Replicate Test Attributes </label>
+                            </p>
+                          </div>
+                          <div class="form-group">
+                            <label
+                              >Indicate % of Control Customers you intend to set aside
+                              <span class="tooltip"
+                                >?
+                                <span class="tooltiptext"
+                                  >Enter a name for your test that you would later like
+                                  to refer to.</span
+                                >
+                              </span>
+                            </label>
+                            <div class="row">
+                              <div class="col-md-2">
+                                <input type="number" value="3" class="form-control" />
+                              </div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                            <label
+                              >Match Test and Control customers based on
+                              <span class="tooltip"
+                                >?
+                                <span class="tooltiptext"
+                                  >Test & Learn recommends choosing the metric that
+                                  relates most directly to the primary measure of
+                                  success for your campaign. Ex- Driver retention.
+                                </span>
+                              </span></label
+                            >
+                            <p>
+                              <input
+                                type="radio"
+                                id="matchtestprimary"
+                                name="matchtest"
+                                checked
+                                value="1"
+                              />
+                              <label for="matchtestprimary">Primary Metric</label>
+        
+                              <input
+                                type="radio"
+                                id="matchtestmetric"
+                                name="matchtest"
+                                value="2"
+                              />
+                              <label for="matchtestmetric">Select Attributes and Metrics</label>
+                            </p>
+                            <div class="row" style="display: none;"  id="matchtest-2">
+                             
+                                <div class="col-md-4">
+                                  <select class="boot-multiselect" multiple="multiple">
+                                    <option value="1">Orders per driver</option>
+                                    <option value="2">Driver Tenure</option>
+                                    <option value="3">Spark order share</option>
+                                    <option value="4">Call centre calls</option>
+                                    <option value="5">Avg driver earning</option>
+                                    <option value="6">Tips/Orders with tips</option>
+                                    <option value="7">Earning per order</option>
+                                    <option value="8">Bonus amount</option>
+                                    <option value="9">Offer Acceptance</option>
+                                    <option value="10">Percentage of orders accepted via RR</option>
+                                    <option value="11">PSA</option>
+                                    <option value="12">% of orders accepted via Broadcast with surge</option>
+                                    <option value="13">Broadcast acceptance</option>
+                                    <option value="14">% Orders expired</option>
+                                    <option value="15">3rd party orders</option>
+                                    <option value="16">dropped orders</option>
+                                    <option value="17">Time to store</option>
+                                    <option value="18">Store Wait time</option>
+                                    <option value="19">Delivery time</option>
+                                    <option value="20">Drop wait time</option>
+                                    <option value="21">Order distance/Long distance orders</option>
+                                    <option value="22">OTD</option>
+                                    <option value="23">OTA</option>
+                                    <option value="24">OTP</option>
+                                    <option value="25">Batch rate</option>
+                                    <option value="26">Multiple trips for an order</option>
+                                    <option value="27">Returned Orders</option>
+                                    <option value="28">Batch units</option>
+                                    <option value="29">Avg Basket size</option>
+                                    <option value="30">Large/Cold storage items</option>
+                                    <option value="31">CSAT rating</option>
+                                    <option value="32">Driver friendliness</option>
+                                    <option value="33">Driver CSAT</option>
+                                    <option value="34">CSAT delivery</option>                                  
+                                  </select>
+                                </div>
+                              
+                            </div>
+                          </div>
+                          
+                          <div class="samplecalc mt-5">
+                            <div class="sample-list">
+                              <div class="zone-icon">
+                              <i class="fa fa-map-o"></i>
+                              </div>
+                            <div class="zone-info">
+                              <label>Test Control Results</label>
+                              <p>3 zones</p>
+                            </div>
+                            </div>
+
+                            <ul id="myTab2" role="tablist" class="nav nav-tabs nav-tabs-theme nav-pills with-arrow lined flex-column flex-sm-row text-center">
+                              <li class="nav-item flex-sm-fill">
+                                <a id="difference-tab" data-toggle="tab" href="#difference" role="tab" aria-controls="difference" aria-selected="true" class="nav-link rounded-0 active">Difference of Means</a>
+                              </li>
+                              <li class="nav-item flex-sm-fill">
+                                <a id="correlation-tab" data-toggle="tab" href="#correlation" role="tab" aria-controls="correlation" aria-selected="false" class="nav-link rounded-0">Correlation</a>
+                              </li>
+                             
+                            </ul>
+                            <div id="myTab2Content" class="tab-content tab-content-theme">
+                              <div id="difference" role="tabpanel" aria-labelledby="difference-tab" class="tab-pane fade px-0 py-3 show active bg-transparent">
+                                <div class="table-responsive">
+                                  <table style="width:100%" class="table table-striped table-theme zonelist">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Test Customer ID</th>
+                                        <th scope="col" class="text-center">State</th>
+                                        <th scope="col">Control Customer ID</th>
+                                        <th scope="col" class="text-center">Device Age</th>
+                                        <th scope="col" class="text-center">Time to Contract Expiry</th>
+                                        <th scope="col" class="text-center">Device Out Of Warranty</th>
+                                        <th scope="col" class="text-center">Existing Plan-4G</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>107XXXX76</td>
+                                        <td class="text-center">CA</td>
+                                        <td>107XXXX64</td>
+                                        <td class="text-center">1%</td> 
+                                        <td class="text-center">0.5%</td> 
+                                        <td class="text-center">0.3%</td> 
+                                        <td class="text-center">2%</td> 
+                                      </tr>
+                                      <tr>
+                                        <td>107XXXX22</td>
+                                        <td class="text-center">TX</td>
+                                        <td>107XXXX58</td>
+                                        <td class="text-center">2%</td> 
+                                        <td class="text-center">1%</td> 
+                                        <td class="text-center">1%</td> 
+                                        <td class="text-center">0.5%</td> 
+                                      </tr>
+                                      <tr>
+                                        <td>107XXXX49</td>
+                                        <td class="text-center">FL</td>
+                                        <td>107XXXX18</td>
+                                        <td class="text-center">1%</td> 
+                                        <td class="text-center">1.5%</td> 
+                                        <td class="text-center">0.5%</td> 
+                                        <td class="text-center">1.5%</td> 
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                              </div>
+                              <div id="correlation" role="tabpanel" aria-labelledby="correlation-tab" class="tab-pane fade px-0 py-3 bg-transparent">
+                                <div class="table-responsive">
+                                  <table style="width:100%" class="table table-striped table-theme zonelist">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Test Customer ID</th>
+                                        <th scope="col" class="text-center">State</th>
+                                        <th scope="col">Control Customer ID</th>
+                                        <th scope="col" class="text-center">Device Age</th>
+                                        <th scope="col" class="text-center">Time to Contract Expiry</th>
+                                        <th scope="col" class="text-center">Device Out Of Warranty</th>
+                                        <th scope="col" class="text-center">Existing Plan-4G</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>107XXXX76</td>
+                                        <td class="text-center">CA</td>
+                                        <td>107XXXX64</td>
+                                        <td class="text-center">99%</td> 
+                                        <td class="text-center">100%</td> 
+                                        <td class="text-center">100%</td> 
+                                        <td class="text-center">98%</td> 
+                                      </tr>
+                                      <tr>
+                                        <td>107XXXX22</td>
+                                        <td class="text-center">TX</td>
+                                        <td>107XXXX58</td>
+                                        <td class="text-center">98%</td> 
+                                        <td class="text-center">99%</td> 
+                                        <td class="text-center">99%</td> 
+                                        <td class="text-center">100%</td> 
+                                      </tr>
+                                      <tr>
+                                        <td>107XXXX49</td>
+                                        <td class="text-center">FL</td>
+                                        <td>107XXXX18</td>
+                                        <td class="text-center">99%</td> 
+                                        <td class="text-center">99%</td> 
+                                        <td class="text-center">100%</td> 
+                                        <td class="text-center">99%</td> 
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="btn-group">
+                            <button type="submit" value="Next">Next</button>
+                            <button type="button" value="Save as Draft">
+                              Save as Draft
+                            </button>
+                          </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      
+    </section>
+  </body>
+</html>

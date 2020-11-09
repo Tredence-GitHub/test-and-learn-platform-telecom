@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8" />
+    <title>TALP</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/jquery.range.css" />
+    <link rel="stylesheet" href="css/bootstrap-multiselect.css" />
+    <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+      integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.range.js"></script>
+    <script src="js/bootstrap-multiselect.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg header">
+        <a href="index.html" class="navbar-brand logo"
+          ><img src="images/logo-dark.png" 
+        /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="dashboard.html">Overview </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="design.html">Design</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+          <div class="header-right">
+            <a href="#" class="avatar">
+              <span><img src="images/avatar.jpg" alt="avatar"></span>
+            </a>
+          </div>
+        </div>
+    </nav>
+
+      <section class="container overlaphead">
+        <div class="row">
+
+         <div class="col-md-3">
+            <div class="info-card shadow">
+                   <div class="d-flex align-items-center justify-content-between">
+                      <h5>Ongoing</h5>
+                      <i class="fa fa-refresh placeholdericon"></i>
+                   </div>
+              
+                      <div class="d-flex align-items-center mt-4">
+                         <h2>10</h2>
+                      </div>
+                     
+             </div>
+         </div>
+    
+         <div class="col-md-3">
+            <div class="info-card shadow">
+                   <div class="d-flex align-items-center justify-content-between">
+                      <h5>Scheduled</h5>
+                      <i class="fa fa-clock-o placeholdericon"></i>
+                   </div>
+              
+                      <div class="d-flex align-items-center mt-4">
+                         <h2>05</h2>
+                      </div>
+                     
+             </div>
+         </div>
+
+         <div class="col-md-3">
+            <div class="info-card shadow">
+                   <div class="d-flex align-items-center justify-content-between">
+                      <h5>Completed</h5>
+                      <i class="fa fa-check-circle-o placeholdericon"></i>
+                   </div>
+              
+                      <div class="d-flex align-items-center mt-4">
+                         <h2>18</h2>
+                      </div>
+                     
+             </div>
+         </div>
+    
+         <div class="col-md-3">
+            <div class="info-card shadow">
+                   <div class="d-flex align-items-center justify-content-between">
+                      <h5>Lift</h5>
+                      <i class="fa fa-arrow-circle-o-up placeholdericon"></i>
+                   </div>
+              
+                      <div class="d-flex align-items-center mt-4">
+                        <h2><span class="text-positive"> <i class="fa fa-caret-up"></i> +ve</span> 11</h2>
+                        <h2 class="ml-auto"><span class="text-negative"> <i class="fa fa-caret-down"></i> -ve</span> 07</h2>
+                     </div>
+                     
+             </div>
+         </div>
+
+        </div>
+      </section>
+
+      <section class="container-fluid">
+        <!-- <div class="row">
+<div class="col-md-4">
+  <div class="dashboard-block">
+    <h4>Recent Experiment Stats</h4>
+  <div id="linechart">
+  </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="dashboard-block">
+    <h4>Experiment Stats</h4>
+  <div id="piechart">
+  </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="dashboard-block">
+    <h4>Recent Experiment Stats</h4>
+  <div id="areachart">
+  </div>
+  </div>
+</div>
+        </div> -->
+        
+          <div class="dashboard-block float-left w-100">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="filter-area shadow">
+                <h4>Filters</h4>
+                <form>
+                  <div class="form-group mb-3">
+                    <label
+                      >Test Type
+                     </label>
+                     <select class="form-control">
+                      <option value="Pilot">Pilot</option>
+                      <option value="Soft Launch">Soft Launch</option>
+                      <option value="Execution">Execution</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label
+                      >Status
+                     </label>
+                     <select class="form-control">
+                      <option value="Ongoing">Ongoing</option>
+                      <option value="Scheduled">Scheduled</option>
+                      <option value="Completed">Completed</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label
+                      >Ownership
+                     </label>
+                     <select class="form-control">
+                      <option value="Admin">Admin</option>
+                      <option value="Public">Public</option>
+                      <option value="Specific User">Specific User</option>
+                    </select>
+                  </div>
+                </form>
+               </div>
+            </div>
+            <div class="col-md-9 pl-0">
+              <div class="overview-table">
+                <h4>Experiments Overview</h4>
+                <div class="table-responsive">
+                    <table style="width:100%" class="table table-striped table-theme overview">
+                      <thead>
+                        <tr>
+                          <th scope="col">Test Name</th>
+                          <th scope="col">Goal</th>
+                          <th scope="col" class="text-center">Status</th>
+                          <th scope="col" class="text-center">Level</th>
+                          <th scope="col" class="text-center">Creation Date</th>
+                          <th scope="col" class="text-center">No of Sites/Zones</th>
+                          <th scope="col" class="text-center">Created by</th>
+                          <th scope="col" class="text-center">Change Permission</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>TASS</td>
+                          <td>Goal description</td>
+                          <td class="text-center"> <span class="bg-scheduled">Scheduled</span> </td>
+                          <td class="text-center"> Execution </td>
+                          <td class="text-center">04/06/2020</td>
+                          <td class="text-center">100</td>
+                          <td class="text-center">Name</td>
+                          <td class="text-center">Public</td>
+                         </tr>
+                        <tr>
+                            <td>Dynamic Pay</td>
+                            <td>Goal description</td>
+                            <td class="text-center">  <span class="bg-completed">Completed</span> </td>
+                            <td class="text-center"> Soft Launch </td>
+                            <td class="text-center">06/04/2020</td>
+                            <td class="text-center">45</td>
+                            <td class="text-center">Name</td>
+                            <td class="text-center">Owner</td>
+                         </tr>
+                        <tr>
+                            <td>TASS</td>
+                            <td>Goal description</td>
+                            <td class="text-center">   <span class="bg-ongoing">Ongoing</span> </td>
+                            <td class="text-center"> Pilot </td>
+                            <td class="text-center">07/05/2020</td>
+                            <td class="text-center">05</td>
+                            <td class="text-center">Name</td>
+                            <td class="text-center">Specific user</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                 
+                </div>
+              </div>
+            </div>
+    </div>
+   </div>
+      </section>
+</body>
+</html>
