@@ -236,20 +236,140 @@ $(document).ready(function () {
   var linechart = new ApexCharts(document.querySelector(".linechart"), lineoptions);
   linechart.render();
 
-  var linechartdelivery = new ApexCharts(document.querySelector(".linechartdelivery"), lineoptions);
+  var funnellineoptions = {
+    series: [
+    {
+      name: "Test",
+      data: [3.7,
+        3.7,
+        3.8,
+        3.8,
+        4.1,
+        4.3,
+        4.3]
+    },
+    {
+      name: "Control",
+      data: [3.7, 3.8,
+        3.6,
+        3.6,
+        3.7,
+        3.8,
+        3.7]
+    }
+  ],
+    chart: {
+    height: 350,
+    type: 'line',
+    dropShadow: {
+      enabled: true,
+      color: '#000',
+      top: 18,
+      left: 7,
+      blur: 10,
+      opacity: 0.2
+    },
+    toolbar: {
+      show: false
+    }
+  },
+  colors: ['#c9802a', '#0095ce'],
+  dataLabels: {
+    enabled: true,
+  },
+  stroke: {
+    curve: 'smooth'
+  },
+  title: {
+    text: 'CTR',
+    align: 'left',
+    style: {
+      fontWeight:  'normal',
+      color:  '#ffe2c0'
+    },
+  },
+  grid: {
+    borderColor: 'transparent',
+    row: {
+      colors: ['#2b3c46', 'transparent'], // takes an array which will be repeated on columns
+      opacity: 0.5
+    },
+  },
+  markers: {
+    size: 1
+  },
+  tooltip: {
+    enabled: true,
+    style: {
+      fontSize: '12px'
+    },
+    x: {
+      show: true,
+      format:'HH:mm'
+    },
+    y: {
+      formatter:(value) => `${value}`
+    },
+    marker: {
+      show: false,
+    },
+    theme:'dark'
+  },
+  xaxis: {
+    categories: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'],
+    labels: {
+      style: {
+          colors: '#bfb09b'
+      },
+    }
+  },
+  yaxis: {
+    min: 0,
+    max: 10,
+    labels: {
+      style: {
+          colors: '#bfb09b'
+      },
+    }
+  },
+  legend: {
+    position: 'top',
+    horizontalAlign: 'right',
+    floating: true,
+    offsetY: -25,
+    offsetX: -5,
+    labels: {
+      colors: '#bfb09b'
+  },
+  }
+  };
+
+  var linechartdelivery = new ApexCharts(document.querySelector(".linechartdelivery"), funnellineoptions);
   linechartdelivery.render();
 
   var CSATlineoptions = {
     series: [
-    {
-      name: "Test",
-      data: [28, 29, 33, 36, 32, 32, 33]
-    },
-    {
-      name: "Control",
-      data: [12, 11, 14, 18, 17, 13, 13]
-    }
-  ],
+      {
+        name: "Test",
+        data: [72,
+          75,
+          76,
+          78,
+          78,
+          81,
+          81]
+      },
+      {
+        name: "Control",
+        data: [65,
+          67,
+          68,
+          68,
+          69,
+          71,
+          71]
+      }
+    ],
     chart: {
     height: 350,
     type: 'line',
@@ -316,8 +436,8 @@ $(document).ready(function () {
     }
   },
   yaxis: {
-    min: 5,
-    max: 40,
+    min: 50,
+    max: 100,
     labels: {
       style: {
           colors: '#bfb09b'
@@ -338,11 +458,10 @@ $(document).ready(function () {
   var linechartsurvey = new ApexCharts(document.querySelector(".linechartsurvey"), CSATlineoptions);
   linechartsurvey.render();
 
-
   var baroptions = {
     series: [{
       name: "Lift",
-      data: [0.10, 0.09, 0.06, -0.90, -1.10, -0.60, 0.10]
+      data: [0,0,4,4,11,11,11]
   }],
     chart: {
       toolbar: {
@@ -411,11 +530,150 @@ $(document).ready(function () {
   var barchart = new ApexCharts(document.querySelector(".barchart"), baroptions);
   barchart.render();
 
-  var barchartdelivery = new ApexCharts(document.querySelector(".barchartdelivery"), baroptions);
+  var funnelbaroptions = {
+    series: [{
+      name: "Lift",
+      data: [-1,-2,4,6,11,15,16]
+  }],
+    chart: {
+      toolbar: {
+        show: false,
+      },
+    height: 350,
+    type: 'line',
+    events: {
+      click: function(chart, w, e) {
+        // console.log(chart, w, e)
+      }
+    }
+  },
+  colors: ['#c9802a'],
+  dataLabels: {
+    enabled: false
+  },
+  grid: {
+    borderColor: '#2b3c46',
+  },
+  legend: {
+    show: false
+  },
+  tooltip: {
+    enabled: true,
+    style: {
+      fontSize: '12px'
+    },
+    x: {
+      show: true,
+    },
+    y: {
+      formatter:(value) => `${value}%`
+    },
+    marker: {
+      show: false,
+    },
+    theme:'dark'
+  },
+  xaxis: {
+    categories: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'],
+
+    labels: {
+      style: {
+        colors: '#bfb09b'
+      }
+    }
+  },
+  title: {
+    text: '% Lift',
+    align: 'left',
+    style: {
+      fontWeight:  'normal',
+      color:  '#ffe2c0'
+    },
+  },
+  yaxis: {
+    labels: {
+      style: {
+          colors: '#bfb09b'
+      },
+    }
+  },
+
+  };
+  var barchartdelivery = new ApexCharts(document.querySelector(".funnelbarchartdelivery"), funnelbaroptions);
   barchartdelivery.render();
 
-  var barchartsurvey = new ApexCharts(document.querySelector(".barchartsurvey"), baroptions);
+  var surveybaroptions = {
+    series: [{
+      name: "Lift",
+      data: [10,11,11,13,12,12,12]
+  }],
+    chart: {
+      toolbar: {
+        show: false,
+      },
+    height: 350,
+    type: 'line',
+    events: {
+      click: function(chart, w, e) {
+        // console.log(chart, w, e)
+      }
+    }
+  },
+  colors: ['#c9802a'],
+  dataLabels: {
+    enabled: false
+  },
+  grid: {
+    borderColor: '#2b3c46',
+  },
+  legend: {
+    show: false
+  },
+  tooltip: {
+    enabled: true,
+    style: {
+      fontSize: '12px'
+    },
+    x: {
+      show: true,
+    },
+    y: {
+      formatter:(value) => `${value}%`
+    },
+    marker: {
+      show: false,
+    },
+    theme:'dark'
+  },
+  xaxis: {
+    categories: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'],
+
+    labels: {
+      style: {
+        colors: '#bfb09b'
+      }
+    }
+  },
+  title: {
+    text: '% Lift',
+    align: 'left',
+    style: {
+      fontWeight:  'normal',
+      color:  '#ffe2c0'
+    },
+  },
+  yaxis: {
+    labels: {
+      style: {
+          colors: '#bfb09b'
+      },
+    }
+  },
+
+  };
+  var barchartsurvey = new ApexCharts(document.querySelector(".barchartsurvey"), surveybaroptions);
   barchartsurvey.render();
+
 
   var reversedbaroptions = {
     series: [{
@@ -780,7 +1038,7 @@ $(document).ready(function () {
     theme:'dark'
   },
   xaxis: {
-    categories: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7', 'Week 8'],
+    categories: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'],
     labels: {
       style: {
           colors: '#bfb09b'
@@ -816,11 +1074,11 @@ $(document).ready(function () {
     series: [
     {
       name: "Test",
-      data: [42, 43, 44, 44, 45]
+      data: [41, 41, 42, 43, 45,46,46]
     },
     {
       name: "Control",
-      data: [41, 42, 43]
+      data: [41, 41, 41, 41, 41, 41, 42]
     }
   ],
     chart: {
@@ -881,7 +1139,7 @@ $(document).ready(function () {
     theme:'dark'
   },
   xaxis: {
-    categories: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7', 'Week 8'],
+    categories: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'],
     labels: {
       style: {
           colors: '#bfb09b'

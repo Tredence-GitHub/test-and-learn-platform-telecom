@@ -1302,3 +1302,9 @@ margin-bottom: 20px;
   background: #ffffff2b;
     padding: 30px;
 }
+
+@media screen and (min-width: 1900px) {
+  .info-card {
+    min-height: 310px;
+  }
+}
